@@ -7,6 +7,7 @@ RUN echo "mysql-server mysql-server/root_password password root" | debconf-set-s
 RUN echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections
 
 RUN apt-get update && \
+ 	apt-get install libmecab2 && \
 	apt-get -y install mysql-server-5.7 && \
 	mkdir -p /var/lib/mysql && \
 	mkdir -p /var/run/mysqld && \
