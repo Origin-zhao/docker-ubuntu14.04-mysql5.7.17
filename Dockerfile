@@ -1,4 +1,4 @@
-FROM ubuntu:ubuntu:14.04.5
+FROM ubuntu:14.04.5
 MAINTAINER leafney "294786949@qq.com"
 
 RUN echo "deb http://cn.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse" >> /etc/apt/sources.list
